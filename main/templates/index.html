@@ -1,0 +1,110 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS styles */
+        body {
+            background-image: url("{% static 'images/ptaki.jpg' %}");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .content {
+            padding: 50px;
+            border: 1px solid gainsboro;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for content */
+            animation: fadeIn 1s ease-in-out;
+        }
+        .picture {
+            margin-bottom: 20px;
+            border-radius: 10px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .picture img {
+            width: 320px;
+            height: 320px;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container border p-3 rounded">
+
+        
+        <div class="content mt-3">
+            <h2>Wróbel</h2>
+            <p>Wróbel to mały, pospolity ptak o brązowo-szarym upierzeniu, z czarnym paskiem na podgardlu u samców. Jest bardzo adaptacyjny i żyje blisko ludzkich osiedli.</p>
+            <p><strong>Odgłosy:</strong> Wróble wydają charakterystyczne ćwierkanie i świergoty. Ich dźwięki są krótkie i powtarzalne, często używane do komunikacji w stadach.</p>
+            <div class="row">
+                <div class="col-md-12 picture">  
+                    <img src="{% static 'images/wrobel.jpg' %}" class="img-fluid rounded mx-auto d-block" alt="Wróbel">
+                </div>
+            </div>
+        </div>
+
+        <div class="content mt-3">
+            <h2>Pliszka</h2>
+            <p>Pliszka to smukły ptak o długim ogonie, który często kiwa podczas chodzenia. Ma czarno-białe upierzenie z charakterystycznym białym czołem.</p>
+            <p><strong>Odgłosy:</strong> Pliszki wydają wysokie, dźwięczne „tsi-tsi-tsi” podczas lotu oraz różnorodne krótkie, melodyjne odgłosy w locie i na ziemi.</p>
+            <div class="row">
+                <div class="col-md-12 picture">
+                    <img src="{% static 'images/pliszka.jpg' %}" class="img-fluid rounded mx-auto d-block" alt="Pliszka">
+                </div>
+            </div>
+        </div>
+
+        <div class="content mt-3">
+            <h2>Zięba</h2>
+            <p>Zięba to średniej wielkości ptak o kolorowym upierzeniu. Samce mają czerwone podbrzusze i niebieskawy czubek głowy, podczas gdy samice są bardziej stonowane w kolorach.</p>
+            <p><strong>Odgłosy:</strong> Zięby wydają melodyjne śpiewy składające się z różnych dźwięków, takich jak tryl i świergot. Ich pieśń jest złożona i zmienna.</p>
+            <div class="row">
+                <div class="col-md-12 picture">
+                    <img src="{% static 'images/zieba.jpg' %}" class="img-fluid rounded mx-auto d-block" alt="Zięba">
+                </div>
+            </div>
+        </div>
+
+        <div class="content mt-3">
+            <h2>Albatros</h2>
+            <p>Albatrosy to duże ptaki morskie z długimi skrzydłami, przystosowane do długich lotów nad oceanami. Mają białe upierzenie z czarnymi akcentami na skrzydłach.</p>
+            <p><strong>Odgłosy:</strong> Albatrosy wydają głośne, skrzeczące odgłosy oraz różnorodne dźwięki przypominające gruchanie i buczenie, szczególnie podczas zalotów i komunikacji w kolonii.</p>
+            <div class="row">
+                <div class="col-md-12 picture">
+                    <img src="{% static 'images/albatros.jpg' %}" class="img-fluid rounded mx-auto d-block" alt="Albatros">
+                </div>
+            </div>
+        </div>
+
+        <div class="content mt-3">
+            <h2>Orzeł</h2>
+            <p>Orły to duże drapieżne ptaki o potężnych szponach i zakrzywionych dziobach. Mają silne, szerokie skrzydła i ostre wzroki, co czyni je skutecznymi łowcami.</p>
+            <p><strong>Odgłosy:</strong> Orły wydają głośne, przenikliwe krzyki. Ich dźwięki są zwykle mocne i wysokie, służące do komunikacji i oznaczania terytorium.</p>
+            <div class="row">
+                <div class="col-md-12 picture">
+                    <img src="{% static 'images/orzel.jpg' %}" class="img-fluid rounded mx-auto d-block" alt="Orzeł">
+                </div>
+            </div>
+        </div>
+
+        <div class="content mt-3">
+            <h2>Sokół</h2>
+            <p>Sokoły to średniej wielkości ptaki drapieżne znane z wyjątkowej szybkości i zwinności w locie. Mają ostre, zakrzywione dzioby i smukłe sylwetki.</p>
+            <p><strong>Odgłosy:</strong> Sokoły wydają wysokie, przenikliwe „ki-ki-ki” lub „kek-kek-kek” dźwięki. Ich odgłosy są często szybkie i powtarzalne, używane do komunikacji w czasie polowań i obrony terytorium.</p>
+            <div class="row">
+                <div class="col-md-12 picture">
+                    <img src="{% static 'images/sokol.jpeg' %}" class="img-fluid rounded mx-auto d-block" alt="Sokół">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
